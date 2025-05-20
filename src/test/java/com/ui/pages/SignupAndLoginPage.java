@@ -2,6 +2,8 @@ package com.ui.pages;
 
 import org.openqa.selenium.By;
 import com.constants.Browser;
+import static com.constants.Env.*;
+import com.utility.PropertiesUtil;
 import com.utility.ReusableUtility;
 
 public final class SignupAndLoginPage extends ReusableUtility {
@@ -10,9 +12,10 @@ public final class SignupAndLoginPage extends ReusableUtility {
 	private static final By EMAIL_LOCATOR = By.xpath("//input[@data-qa=\"signup-email\"]");
 	private static final By SIGNUP_LOCATOR = By.xpath("//button[text()=\"Signup\"]");
 
+
 	public SignupAndLoginPage(Browser browserName) {
 		super(browserName);
-		goToWebsite("https://automationexercise.com/signup");
+		goToWebsite(PropertiesUtil.getProperty(QA,"URL"));
 	}
 	
 	public RegistrationPage enterNameAndMailid(String name,String mailid) {
