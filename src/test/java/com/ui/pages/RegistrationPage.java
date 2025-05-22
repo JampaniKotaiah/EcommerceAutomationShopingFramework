@@ -1,13 +1,17 @@
 package com.ui.pages;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import static com.constants.Env.QA;
 import com.ui.pojo.RegistrationPojo;
+import com.utility.LoggerUtlity;
+import com.utility.PropertiesUtil;
 import com.utility.ReusableUtility;
 
 public final class RegistrationPage extends ReusableUtility{
 	
+	Logger logger = LoggerUtlity.getLogger(this.getClass());
 	
 	private static final By TITLE_LOCATOR = By.xpath("//input[@id=\"id_gender1\"]");
 	private static final By PASSWORD_LOCATOR= By.xpath("//input[@id=\"password\"]");
@@ -25,7 +29,7 @@ public final class RegistrationPage extends ReusableUtility{
 	private static final By CITY_LOCATOR = By.xpath("//input[@id=\"city\"]");
 	private static final By ZIPCODE_LOCATOR = By.xpath("//input[@id=\"zipcode\"]");
 	private static final By MOBILE_NUMBER_LOCATOR = By.xpath("//input[@id=\"mobile_number\"]");
-	private static final By CREATE_ACCOUNT_BUTTON_LOCATOR = By.xpath("//button[text()=\"Create Account\"]");
+	private static final By CREATE_ACCOUNT_BUTTON_LOCATOR = By.xpath("//input[@value=\"create_account\"]/following-sibling::button");
 	
 	
 
@@ -34,11 +38,12 @@ public final class RegistrationPage extends ReusableUtility{
 	}
 	
 	public AccountCreated enterRegistrationdetails(RegistrationPojo registrationPojo) {
+		logger.info("For Signing  creation fill the all the deatils");
 		clickOn(TITLE_LOCATOR);
-		enterText(PASSWORD_LOCATOR, "password");
-		selectDropDownValue(DAY_LOCATOR, "26");
-		selectDropDownValue(MONTHS_LOCATOR, "March");
-		selectDropDownValue(YREARS_LOCATOR, "1991");
+		enterText(PASSWORD_LOCATOR,PropertiesUtil.getProperty(QA,"PASSWORD"));
+		selectDropDownValue(DAY_LOCATOR, PropertiesUtil.getProperty(QA,"DATE"));
+		selectDropDownValue(MONTHS_LOCATOR, PropertiesUtil.getProperty(QA,"MONTH"));
+		selectDropDownValue(YREARS_LOCATOR, PropertiesUtil.getProperty(QA,"YEAR"));
 		clickOnCheckboxByjs(NEWSLETTER_LOCATOR);
 		clickOnCheckboxByjs(OFFERS_LOCATOR);
 		enterText(FRIST_NAME_LOCATOR,registrationPojo.getFirstName());
@@ -51,7 +56,7 @@ public final class RegistrationPage extends ReusableUtility{
 		enterText(ZIPCODE_LOCATOR,registrationPojo.getPostal());
 		enterText(MOBILE_NUMBER_LOCATOR,registrationPojo.getMobile());
 		clickOn(CREATE_ACCOUNT_BUTTON_LOCATOR);
-		
+		logger.info("For login all the the detials has filled");
 		AccountCreated accountCreated = new AccountCreated(getDriver());
 		return accountCreated;
 
