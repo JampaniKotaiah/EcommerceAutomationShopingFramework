@@ -1,55 +1,164 @@
-2025-05-22 22:54:05[main] INFO com.ui.listeners.TestListners Test suit Started 
-2025-05-22 22:54:05[main] INFO com.ui.pages.SignupAndLoginPage Lunching browser  CHROME 
-2025-05-22 22:54:06[main] INFO com.ui.pages.SignupAndLoginPage Visiting the website https://automationexercise.com/signup 
-2025-05-22 22:54:09[main] INFO com.ui.listeners.TestListners registrationTest 
-2025-05-22 22:54:09[main] INFO com.ui.listeners.TestListners verfiy the registraion details for signin 
-2025-05-22 22:54:09[main] INFO com.ui.listeners.TestListners [smoke, e2e, sanity] 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Enter Name and maild on Sign in page for registriaon 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.name: name 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter floria.huels 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="signup-email"] 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter thea.goodwin@yahoo.com 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //button[text()="Signup"] 
-2025-05-22 22:54:10[main] INFO com.ui.pages.SignupAndLoginPage Element found and now performing click By.xpath: //button[text()="Signup"] 
-2025-05-22 22:54:10[main] INFO com.ui.pages.RegistrationPage For Signing  creation fill the all the deatils 
-2025-05-22 22:54:10[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="id_gender1"] 
-2025-05-22 22:54:11[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@id="id_gender1"] 
-2025-05-22 22:54:11[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="password"] 
-2025-05-22 22:54:11[main] INFO com.ui.pages.RegistrationPage Found the element and enter Password 
-2025-05-22 22:54:11[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: days 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the  12 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: months 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the  March 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: years 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the  1991 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //div[@class="checkbox"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (5369308fb0e8f6108e2b43517507977b)] -> xpath: //div[@class="checkbox"]] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="optin"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (5369308fb0e8f6108e2b43517507977b)] -> xpath: //input[@id="optin"]] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: first_name 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter Dale 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: last_name 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter Hand 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="company"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter Emard-Tromp 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address1"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter 17713 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address2"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter 875 Nicky Stream 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="state"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter Indiana 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="city"] 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Found the element and enter Port Dorseyview 
-2025-05-22 22:54:12[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="zipcode"] 
-2025-05-22 22:54:13[main] INFO com.ui.pages.RegistrationPage Found the element and enter 55602-1416 
-2025-05-22 22:54:13[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="mobile_number"] 
-2025-05-22 22:54:13[main] INFO com.ui.pages.RegistrationPage Found the element and enter 970.253.2253 
-2025-05-22 22:54:13[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@value="create_account"]/following-sibling::button 
-2025-05-22 22:54:14[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@value="create_account"]/following-sibling::button 
-2025-05-22 22:54:14[main] INFO com.ui.pages.RegistrationPage For login all the the detials has filled 
-2025-05-22 22:54:14[main] INFO com.ui.pages.AccountCreated Account details has filled 
-2025-05-22 22:54:14[main] INFO com.ui.pages.AccountCreated Finding Element with the locator By.xpath: //a[text()="Continue"] 
-2025-05-22 22:54:25[main] INFO com.ui.pages.AccountCreated Element found and now performing click By.xpath: //a[text()="Continue"] 
-2025-05-22 22:54:25[main] INFO com.ui.pages.AccountCreated Account has created Successfully 
-2025-05-22 22:54:25[main] INFO com.ui.listeners.TestListners registrationTest PASSED 
-2025-05-22 22:54:25[main] INFO com.ui.listeners.TestListners Test suit Completed 
+2025-05-23 22:58:44[main] INFO com.ui.listeners.TestListners Test suit Started 
+2025-05-23 22:58:44[main] INFO com.ui.pages.SignupAndLoginPage Lunching browser  CHROME 
+2025-05-23 22:58:45[main] INFO com.ui.pages.SignupAndLoginPage Visiting the website https://automationexercise.com/signup 
+2025-05-23 22:58:47[main] INFO com.ui.listeners.TestListners registrationTest 
+2025-05-23 22:58:47[main] INFO com.ui.listeners.TestListners verfiy the registraion details for signin 
+2025-05-23 22:58:47[main] INFO com.ui.listeners.TestListners [smoke, e2e, sanity] 
+2025-05-23 22:58:49[main] INFO com.ui.pages.SignupAndLoginPage Enter Name and maild on Sign in page for registriaon 
+2025-05-23 22:58:49[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.name: name 
+2025-05-23 22:58:49[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter moshe.predovic 
+2025-05-23 22:58:49[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="signup-email"] 
+2025-05-23 22:58:49[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter jerrold.graham@yahoo.com 
+2025-05-23 22:58:49[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //button[text()="Signup"] 
+2025-05-23 22:58:50[main] INFO com.ui.pages.SignupAndLoginPage Element found and now performing click By.xpath: //button[text()="Signup"] 
+2025-05-23 22:58:50[main] INFO com.ui.pages.RegistrationPage For Signing  creation fill the all the deatils 
+2025-05-23 22:58:50[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="id_gender1"] 
+2025-05-23 22:58:50[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@id="id_gender1"] 
+2025-05-23 22:58:50[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="password"] 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Found the element and enter Password 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: days 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Found the  12 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: months 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Found the  March 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: years 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Found the  1991 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //div[@class="checkbox"] 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (809d44dd314c461771be43fda0160978)] -> xpath: //div[@class="checkbox"]] 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="optin"] 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (809d44dd314c461771be43fda0160978)] -> xpath: //input[@id="optin"]] 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: first_name 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Found the element and enter Genesis 
+2025-05-23 22:58:51[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: last_name 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter Trantow 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="company"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter Grimes, Anderson and Torphy 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address1"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter 5745 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address2"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter 18993 Koelpin Extension 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="state"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter Tennessee 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="city"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter Langoshborough 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="zipcode"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter 72228 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="mobile_number"] 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Found the element and enter 310-276-0705 
+2025-05-23 22:58:52[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@value="create_account"]/following-sibling::button 
+2025-05-23 22:58:54[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@value="create_account"]/following-sibling::button 
+2025-05-23 22:58:54[main] INFO com.ui.pages.RegistrationPage For login all the the detials has filled 
+2025-05-23 22:58:54[main] INFO com.ui.pages.AccountCreated Account details has filled 
+2025-05-23 22:58:54[main] INFO com.ui.pages.AccountCreated Finding Element with the locator By.xpath: //a[text()="Continu"] 
+2025-05-23 22:58:54[main] WARN com.ui.listeners.TestListners registrationTest SKIPPED 
+2025-05-23 22:58:54[main] INFO com.ui.pages.SignupAndLoginPage Lunching browser  CHROME 
+2025-05-23 22:58:55[main] INFO com.ui.pages.SignupAndLoginPage Visiting the website https://automationexercise.com/signup 
+2025-05-23 22:58:57[main] INFO com.ui.listeners.TestListners registrationTest 
+2025-05-23 22:58:57[main] INFO com.ui.listeners.TestListners verfiy the registraion details for signin 
+2025-05-23 22:58:57[main] INFO com.ui.listeners.TestListners [smoke, e2e, sanity] 
+2025-05-23 22:58:57[main] INFO com.ui.pages.SignupAndLoginPage Enter Name and maild on Sign in page for registriaon 
+2025-05-23 22:58:57[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.name: name 
+2025-05-23 22:58:57[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter andra.ankunding 
+2025-05-23 22:58:57[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="signup-email"] 
+2025-05-23 22:58:58[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter kerstin.pollich@gmail.com 
+2025-05-23 22:58:58[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //button[text()="Signup"] 
+2025-05-23 22:58:58[main] INFO com.ui.pages.SignupAndLoginPage Element found and now performing click By.xpath: //button[text()="Signup"] 
+2025-05-23 22:58:58[main] INFO com.ui.pages.RegistrationPage For Signing  creation fill the all the deatils 
+2025-05-23 22:58:58[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="id_gender1"] 
+2025-05-23 22:58:59[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@id="id_gender1"] 
+2025-05-23 22:58:59[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="password"] 
+2025-05-23 22:58:59[main] INFO com.ui.pages.RegistrationPage Found the element and enter Password 
+2025-05-23 22:58:59[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: days 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Found the  12 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: months 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Found the  March 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: years 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Found the  1991 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //div[@class="checkbox"] 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (c26c47ef16d92f3b3d28a931f17f865d)] -> xpath: //div[@class="checkbox"]] 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="optin"] 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (c26c47ef16d92f3b3d28a931f17f865d)] -> xpath: //input[@id="optin"]] 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: first_name 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Found the element and enter Charles 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: last_name 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Found the element and enter Paucek 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="company"] 
+2025-05-23 22:59:00[main] INFO com.ui.pages.RegistrationPage Found the element and enter Effertz LLC 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address1"] 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Found the element and enter 6386 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address2"] 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Found the element and enter 7827 Ryan Islands 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="state"] 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Found the element and enter New York 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="city"] 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Found the element and enter Tishport 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="zipcode"] 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Found the element and enter 25857 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="mobile_number"] 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Found the element and enter 228.843.4925 
+2025-05-23 22:59:01[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@value="create_account"]/following-sibling::button 
+2025-05-23 22:59:03[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@value="create_account"]/following-sibling::button 
+2025-05-23 22:59:03[main] INFO com.ui.pages.RegistrationPage For login all the the detials has filled 
+2025-05-23 22:59:03[main] INFO com.ui.pages.AccountCreated Account details has filled 
+2025-05-23 22:59:03[main] INFO com.ui.pages.AccountCreated Finding Element with the locator By.xpath: //a[text()="Continu"] 
+2025-05-23 22:59:03[main] WARN com.ui.listeners.TestListners registrationTest SKIPPED 
+2025-05-23 22:59:03[main] INFO com.ui.pages.SignupAndLoginPage Lunching browser  CHROME 
+2025-05-23 22:59:04[main] INFO com.ui.pages.SignupAndLoginPage Visiting the website https://automationexercise.com/signup 
+2025-05-23 22:59:06[main] INFO com.ui.listeners.TestListners registrationTest 
+2025-05-23 22:59:06[main] INFO com.ui.listeners.TestListners verfiy the registraion details for signin 
+2025-05-23 22:59:06[main] INFO com.ui.listeners.TestListners [smoke, e2e, sanity] 
+2025-05-23 22:59:06[main] INFO com.ui.pages.SignupAndLoginPage Enter Name and maild on Sign in page for registriaon 
+2025-05-23 22:59:06[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.name: name 
+2025-05-23 22:59:06[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter anibal.gerlach 
+2025-05-23 22:59:06[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="signup-email"] 
+2025-05-23 22:59:06[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter milford.lynch@yahoo.com 
+2025-05-23 22:59:06[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //button[text()="Signup"] 
+2025-05-23 22:59:07[main] INFO com.ui.pages.SignupAndLoginPage Element found and now performing click By.xpath: //button[text()="Signup"] 
+2025-05-23 22:59:07[main] INFO com.ui.pages.RegistrationPage For Signing  creation fill the all the deatils 
+2025-05-23 22:59:07[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="id_gender1"] 
+2025-05-23 22:59:08[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@id="id_gender1"] 
+2025-05-23 22:59:08[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="password"] 
+2025-05-23 22:59:08[main] INFO com.ui.pages.RegistrationPage Found the element and enter Password 
+2025-05-23 22:59:08[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: days 
+2025-05-23 22:59:08[main] INFO com.ui.pages.RegistrationPage Found the  12 
+2025-05-23 22:59:08[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: months 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the  March 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: years 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the  1991 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //div[@class="checkbox"] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (a1a118f26ba94bcfd174324818c58523)] -> xpath: //div[@class="checkbox"]] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="optin"] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Javascript has performed for find element [[ChromeDriver: chrome on windows (a1a118f26ba94bcfd174324818c58523)] -> xpath: //input[@id="optin"]] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: first_name 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the element and enter Kendrick 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.id: last_name 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the element and enter Lindgren 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="company"] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the element and enter Aufderhar, Berge and Cole 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address1"] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the element and enter 27023 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="address2"] 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Found the element and enter 8548 Layne Walks 
+2025-05-23 22:59:09[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="state"] 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Found the element and enter Delaware 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="city"] 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Found the element and enter Satterfieldville 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="zipcode"] 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Found the element and enter 91705-4098 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@id="mobile_number"] 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Found the element and enter (424) 586-0388 
+2025-05-23 22:59:10[main] INFO com.ui.pages.RegistrationPage Finding Element with the locator By.xpath: //input[@value="create_account"]/following-sibling::button 
+2025-05-23 22:59:11[main] INFO com.ui.pages.RegistrationPage Element found and now performing click By.xpath: //input[@value="create_account"]/following-sibling::button 
+2025-05-23 22:59:11[main] INFO com.ui.pages.RegistrationPage For login all the the detials has filled 
+2025-05-23 22:59:11[main] INFO com.ui.pages.AccountCreated Account details has filled 
+2025-05-23 22:59:11[main] INFO com.ui.pages.AccountCreated Finding Element with the locator By.xpath: //a[text()="Continu"] 
+2025-05-23 22:59:11[main] ERROR com.ui.listeners.TestListners registrationTest FAILED 
+2025-05-23 22:59:11[main] ERROR com.ui.listeners.TestListners no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Continu"]"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1a118f26ba94bcfd174324818c58523, findElement {value=//a[text()="Continu"], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\hi\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49183/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1a118f26ba94bcfd174324818c58523 
+2025-05-23 22:59:11[main] INFO com.ui.listeners.TestListners Test suit Completed 

@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,8 +40,12 @@ public abstract class ReusableUtility {
 		logger.info("Lunching browser  "+browserName);
 		
 		if(browserName == Browser.CHROME) {
-			
-			driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-popup-blocking");
+		options.addArguments("--disable-save-password-bubble");
+		options.addArguments("--disable-autofill-keyboard-accessory-view[8]");
+		options.addArguments("--disable-autofill");
+		driver = new ChromeDriver();
 			
 		}else if(browserName == Browser.FIREFOX) {
 			
@@ -73,7 +78,7 @@ public abstract class ReusableUtility {
 
 	public void clickOn(By Locator) {
 		logger.info("Finding Element with the locator "+Locator);
-		wait  = new WebDriverWait(getDriver(),Duration.ofSeconds(20));
+		wait  = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
 		WebElement Element = driver.findElement(Locator);
 		Element.click();
 		logger.info("Element found and now performing click "+Locator);
