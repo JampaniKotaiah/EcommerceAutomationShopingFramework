@@ -1,11 +1,17 @@
 package com.utility;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Random;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,24 +22,25 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.constants.Browser;
+import org.apache.commons.io.FileUtils;
+
 
 public abstract class ReusableUtility {
 
 	Logger logger = LoggerUtlity.getLogger(this.getClass());
-	private WebDriver driver;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	private WebDriverWait wait;
 
 	
 
 	public WebDriver getDriver() {
-		return driver;
+		return driver.get();
 	}
 
 	public ReusableUtility(WebDriver driver) {
 		super();
-		this.driver = driver;
+		this.driver.set(driver);
 	}
 	
 	public ReusableUtility(Browser browserName) {
@@ -45,15 +52,15 @@ public abstract class ReusableUtility {
 		options.addArguments("--disable-save-password-bubble");
 		options.addArguments("--disable-autofill-keyboard-accessory-view[8]");
 		options.addArguments("--disable-autofill");
-		driver = new ChromeDriver();
+		driver.set(new ChromeDriver());
 			
 		}else if(browserName == Browser.FIREFOX) {
 			
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 			
 		}else if(browserName == Browser.EDGE) {
 			
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 			
 		}else {
 			
@@ -79,7 +86,7 @@ public abstract class ReusableUtility {
 	public void clickOn(By Locator) {
 		logger.info("Finding Element with the locator "+Locator);
 		wait  = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
-		WebElement Element = driver.findElement(Locator);
+		WebElement Element = driver.get().findElement(Locator);
 		Element.click();
 		logger.info("Element found and now performing click "+Locator);
 		
@@ -87,7 +94,7 @@ public abstract class ReusableUtility {
 	
 	public void selectDropDownValue(By Locator,String value ) {
 		logger.info("Finding Element with the locator "+Locator);
-		WebElement Element = getDriver().findElement(Locator);
+		WebElement Element = driver.get().findElement(Locator);
 		Select dropdown = new Select(Element);
 		dropdown.selectByVisibleText(value);
 		logger.info("Found the  "+value);
@@ -95,8 +102,8 @@ public abstract class ReusableUtility {
 	
 	public void clickOnCheckboxByjs(By Locator) {
 		logger.info("Finding Element with the locator "+Locator);
-		wait  = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
+		wait = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+		JavascriptExecutor js = (JavascriptExecutor)driver.get();
 		WebElement Element = getDriver().findElement(Locator);
 		js.executeScript("arguments[0].click();", Element);
 		logger.info("Javascript has performed for find element "+Element);
@@ -104,7 +111,7 @@ public abstract class ReusableUtility {
 	
 	public String getVisibleText(By locator) {
 		logger.info("Finding Element with the locator "+ locator);
-		WebElement element = getDriver().findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		return element.getText();
 		
 	}
@@ -124,6 +131,26 @@ public abstract class ReusableUtility {
 	
 	}
 	
+
+	
+	public String takeScreenshot(String name) {
+		
+		TakesScreenshot screenshot =  (TakesScreenshot)driver.get();
+		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
+		Date date = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
+		String timestamp = format.format(date);
+		String path = System.getProperty("user.dir")+"//screenshots//"+" - "+name+"-"+timestamp+".png";
+		File screenshotFile = new File(path);
+		try {
+			FileUtils.copyFile(screenshotData, screenshotFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return path;
+		
+	}
 	
 	
 

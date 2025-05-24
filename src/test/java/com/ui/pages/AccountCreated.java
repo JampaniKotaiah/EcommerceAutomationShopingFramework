@@ -11,7 +11,7 @@ import com.utility.ReusableUtility;
 public final class AccountCreated extends ReusableUtility {
 	Logger logger = LoggerUtlity.getLogger(this.getClass());
 //	private static final By MESSAGE_LOCATOR = By.xpath("//b[text()=\"Account Created!\"]");
-	private static final By CONTINU_BUTTON_LOCATOR = By.xpath("//a[text()=\"Continue\"]");
+	private static final By CONTINU_BUTTON_LOCATOR = By.xpath("//a[text()=\"Continuse\"]");
 
 	public AccountCreated(WebDriver driver) {
 		super(driver);

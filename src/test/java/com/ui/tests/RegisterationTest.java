@@ -12,15 +12,8 @@ import com.utility.PropertiesUtil;
 
 
 @Listeners({com.ui.listeners.TestListners.class})
-public class RegisterationTest {
+public class RegisterationTest extends TestBase {
 
-	private SignupAndLoginPage signupAndLoginPage;
-
-	@BeforeMethod(description = "Lunch browser and go to signinpage")
-	public void setup() {
-
-		signupAndLoginPage = new SignupAndLoginPage(CHROME);
-	}
 
 	@Test(description = "verfiy the registraion details for signin", groups = { "e2e", "sanity",
 			"smoke" }, retryAnalyzer = com.ui.listeners.MyRetryAnalyer.class)
@@ -29,7 +22,9 @@ public class RegisterationTest {
 
 		HomePage data = signupAndLoginPage
 				.enterNameAndMailid(FakeAddressUtility.getFakeMailAndPassword())
-				.enterRegistrationdetails(FakeAddressUtility.getFakeAddress()).goToAccountCreatedPage();
+				.enterRegistrationdetails(FakeAddressUtility.getFakeAddress()).
+				goToAccountCreatedPage();
+		
 
 	}
 

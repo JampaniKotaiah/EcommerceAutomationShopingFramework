@@ -18,6 +18,9 @@ public final class SignupAndLoginPage extends ReusableUtility {
 	private static final By NAME_LOCATOR = By.name("name");
 	private static final By EMAIL_LOCATOR = By.xpath("//input[@data-qa=\"signup-email\"]");
 	private static final By SIGNUP_LOCATOR = By.xpath("//button[text()=\"Signup\"]");
+	private static final By LOGIN_EMAIL_LOCATOR =By.xpath("//input[@data-qa=\"login-email\"]");
+	private static final By PASSWORD_LOCATOR = By.xpath("//input[@data-qa=\"login-password\"]");
+	private static final By LOGIN_BUTTON = By.xpath("//button[text()=\"Login\"]");
 
 
 	public SignupAndLoginPage(Browser browserName) {
@@ -34,6 +37,15 @@ public final class SignupAndLoginPage extends ReusableUtility {
 		
 		RegistrationPage registrationPage = new RegistrationPage(getDriver());
 		return registrationPage;
+	}
+	
+	public HomePage goToHomePageForShopping() {
+		
+		enterText(LOGIN_EMAIL_LOCATOR, PropertiesUtil.getProperty(QA,"EMAIL"));
+		enterText(PASSWORD_LOCATOR, PropertiesUtil.getProperty(QA,"PASSWORD"));
+		clickOn(LOGIN_BUTTON);
+		HomePage homePage  = new HomePage(getDriver());
+		return homePage;
 	}
 	
 	
