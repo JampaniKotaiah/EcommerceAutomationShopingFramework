@@ -1,9 +1,12 @@
 package com.ui.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.ui.pages.HomePage;
 import com.utility.FakeAddressUtility;
+import com.utility.PropertiesUtil;
+import static com.constants.Env.*;
 
 
 
@@ -14,9 +17,9 @@ public class LoginTest extends TestBase{
 	"smoke" }, retryAnalyzer = com.ui.listeners.MyRetryAnalyer.class)
 
 public void registrationTest() {
-
-		signupAndLoginPage.goToHomePageForShopping();
-
+		
+		String customerName = signupAndLoginPage.goToHomePageForShopping().getUserName();
+		Assert.assertEquals(customerName,PropertiesUtil.getProperty(QA,"USERNAME"));
 }
 
 }

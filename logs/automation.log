@@ -1,15 +1,16 @@
-2025-05-24 20:00:16[main] INFO com.ui.listeners.TestListners Test suit Started 
-2025-05-24 20:00:16[main] INFO com.ui.tests.LoginTest Load the Login page of website 
-2025-05-24 20:00:16[main] INFO com.ui.pages.SignupAndLoginPage Lunching browser  CHROME 
-2025-05-24 20:00:17[main] INFO com.ui.pages.SignupAndLoginPage Visiting the website https://automationexercise.com/signup 
-2025-05-24 20:00:20[main] INFO com.ui.listeners.TestListners registrationTest 
-2025-05-24 20:00:20[main] INFO com.ui.listeners.TestListners verfiy the Login details for shopping 
-2025-05-24 20:00:20[main] INFO com.ui.listeners.TestListners [smoke, e2e, sanity] 
-2025-05-24 20:00:20[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="login-email"] 
-2025-05-24 20:00:20[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter micheline.kunde@hotmail.com  
-2025-05-24 20:00:20[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="login-password"] 
-2025-05-24 20:00:20[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter Password 
-2025-05-24 20:00:20[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //button[text()="Login"] 
-2025-05-24 20:00:25[main] INFO com.ui.pages.SignupAndLoginPage Element found and now performing click By.xpath: //button[text()="Login"] 
-2025-05-24 20:00:25[main] INFO com.ui.listeners.TestListners registrationTest PASSED 
-2025-05-24 20:00:25[main] INFO com.ui.listeners.TestListners Test suit Completed 
+2025-05-25 21:46:14[main] INFO com.ui.listeners.TestListners Test suit Started 
+2025-05-25 21:46:14[main] INFO com.ui.tests.LoginTest Load the Login page of website 
+2025-05-25 21:46:14[main] INFO com.ui.pages.SignupAndLoginPage Lunching browser  CHROME 
+2025-05-25 21:46:16[main] INFO com.ui.pages.SignupAndLoginPage Visiting the website https://automationexercise.com/signup 
+2025-05-25 21:46:18[main] INFO com.ui.listeners.TestListners registrationTest 
+2025-05-25 21:46:18[main] INFO com.ui.listeners.TestListners verfiy the Login details for shopping 
+2025-05-25 21:46:18[main] INFO com.ui.listeners.TestListners [smoke, e2e, sanity] 
+2025-05-25 21:46:18[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="login-email"] 
+2025-05-25 21:46:18[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter micheline.kunde@hotmail.com  
+2025-05-25 21:46:18[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //input[@data-qa="login-password"] 
+2025-05-25 21:46:18[main] INFO com.ui.pages.SignupAndLoginPage Found the element and enter Password 
+2025-05-25 21:46:18[main] INFO com.ui.pages.SignupAndLoginPage Finding Element with the locator By.xpath: //button[text()="Login"] 
+2025-05-25 21:46:22[main] INFO com.ui.pages.SignupAndLoginPage Element found and now performing click By.xpath: //button[text()="Login"] 
+2025-05-25 21:46:22[main] INFO com.ui.pages.HomePage Finding Element with the locator By.xpath: //ul[contains(@class,"navbar-nav")]/descendant::b 
+2025-05-25 21:46:22[main] INFO com.ui.listeners.TestListners registrationTest PASSED 
+2025-05-25 21:46:22[main] INFO com.ui.listeners.TestListners Test suit Completed 
